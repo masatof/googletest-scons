@@ -11,14 +11,25 @@ This example runs the google test by Scons.
     unzip gtest-1.7.0.zip
     cp -r gtest-1.7.0.zip ~
     cd ~/gtest-1.7.0
+    mkdir lib
+    cd lib
+    cmake .
+    make
+
+    unzip gmock-1.7.0.zip
+    cp -r gmock-1.7.0.zip ~
+    cd ~/gmock-1.7.0
+    mkdir lib
+    cd lib
     cmake .
     make
 
 ## Edit the .bashrc
 
-Set the GOOGLE_TEST_PATH in your .bashrc
+Set the GOOGLE_TEST_PATH and GOOGLE_MOCK_PATH in your .bashrc
 
     export GOOGLE_TEST_PATH=$HOME/gtest-1.7.0
+    export GOOGLE_MOCK_PATH=$HOME/gmock-1.7.0
 
 ##Setup the SConstruct
 
