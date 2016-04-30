@@ -13,7 +13,7 @@ This example runs the google test by Scons.
     cd ~/gtest-1.7.0
     mkdir lib
     cd lib
-    cmake .
+    cmake ..
     make
 
     unzip gmock-1.7.0.zip
@@ -21,7 +21,7 @@ This example runs the google test by Scons.
     cd ~/gmock-1.7.0
     mkdir lib
     cd lib
-    cmake .
+    cmake ..
     make
 
 ## Edit the .bashrc
